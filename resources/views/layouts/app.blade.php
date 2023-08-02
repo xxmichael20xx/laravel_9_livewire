@@ -13,10 +13,11 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
-    <!-- Scripts -->
-    @vite(['resources/js/app.js'])
+    <!-- Styles -->
+    @vite(['resources/sass/app.scss'])
 
-    <x-page-map />
+    {{-- Add Page Mapping - Style --}}
+    <x-page-map type="style" />
 </head>
 <body>
     <div id="app">
@@ -78,5 +79,11 @@
             @yield('content')
         </main>
     </div>
+
+    {{-- Scripts --}}
+    @vite(['resources/js/app.js'])
+
+    {{-- Add Page Mapping - Script --}}
+    <x-page-map type="script" />
 </body>
 </html>

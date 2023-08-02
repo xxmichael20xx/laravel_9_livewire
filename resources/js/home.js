@@ -1,1 +1,1 @@
-import '../sass/pages/home.scss';
+console.log(`Setup home.js`)
