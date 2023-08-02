@@ -15,6 +15,8 @@
 
     <!-- Scripts -->
     @vite(['resources/js/app.js'])
+
+    <x-page-map />
 </head>
 <body>
     <div id="app">
